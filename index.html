@@ -155,6 +155,62 @@
         </div>
     </div>
 </section>
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="contact__grid">
+            <div class="contact__info">
+                <h2 class="section-title">Готовы расширить горизонты?</h2>
+                <p>Запросите доступ к платформе сегодня и получите бесплатную консультацию по всем вопросам.</p>
+                <div class="contact__details">
+                    <div class="contact__item">
+                        <i data-lucide="mail"></i>
+                        <span>hello@mentix-botz.blog</span>
+                    </div>
+                    <div class="contact__item">
+                        <i data-lucide="phone"></i>
+                        <span>+33 1 42 27 00 00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact__form-wrapper">
+                <form id="main-form" class="form">
+                    <div class="form__group">
+                        <input type="text" name="name" class="form__input" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form__group">
+                        <input type="email" name="email" class="form__input" placeholder="E-mail" required>
+                    </div>
+                    <div class="form__group">
+                        <input type="text" name="phone" id="phone-input" class="form__input" placeholder="Телефон"
+                            required>
+                    </div>
+
+                    <div class="form__captcha">
+                        <label id="captcha-label" class="form__captcha-text">Сколько будет 5 + 3?</label>
+                        <input type="number" id="captcha-input" class="form__input form__input--small" placeholder="?"
+                            required>
+                    </div>
+
+                    <label class="form__checkbox-label">
+                        <input type="checkbox" required>
+                        <span class="checkmark"></span>
+                        <span class="label-text">Я согласен с <a href="privacy.html">политикой
+                                конфиденциальности</a></span>
+                    </label>
+
+                    <button type="submit" class="btn btn--primary btn--full">Отправить запрос</button>
+                </form>
+
+                <div id="form-success" class="form-message">
+                    <i data-lucide="check-circle"></i>
+                    <h3>Заявка принята!</h3>
+                    <p>Наш эксперт свяжется с вами в ближайшее время.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     </main>
 
     <footer class="footer">
