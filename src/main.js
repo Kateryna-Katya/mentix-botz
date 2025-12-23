@@ -88,4 +88,31 @@ document.addEventListener('DOMContentLoaded', () => {
       if (window.scrollY > 50) header.classList.add('scrolled');
       else header.classList.remove('scrolled');
   });
+  // --- ЛОГИКА COOKIE POPUP ---
+const initCookiePopup = () => {
+  const popup = document.getElementById('cookie-popup');
+  const acceptBtn = document.getElementById('cookie-accept');
+
+  // Проверяем, было ли уже дано согласие
+  const isAccepted = localStorage.getItem('mentix_cookies_accepted');
+
+  if (!isAccepted && popup) {
+      // Показываем через 2 секунды после загрузки
+      setTimeout(() => {
+          popup.classList.add('active');
+      }, 2000);
+  }
+
+  if (acceptBtn && popup) {
+      acceptBtn.addEventListener('click', () => {
+          // Сохраняем выбор
+          localStorage.setItem('mentix_cookies_accepted', 'true');
+          // Скрываем попап
+          popup.classList.remove('active');
+      });
+  }
+};
+
+// Вызови эту функцию внутри document.addEventListener('DOMContentLoaded', ...)
+initCookiePopup();
 });
