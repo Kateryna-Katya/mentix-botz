@@ -766,7 +766,7 @@ section {
 
 @media (max-width: 768px) {
   .pages { padding-top: 120px; }
-  .pages h1 { font-size: 2rem; }
+  .pages h1 { font-size: 1.8rem; }
 }
 /* --- COOKIE POPUP --- */
 .cookie-popup {
