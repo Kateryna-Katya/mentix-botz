@@ -1,56 +1,220 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/mentix-botz/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentix-Botz | Консалтинг нового поколения</title>
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@700;800&display=swap"
+    rel="stylesheet">
+
+  <script src="https://unpkg.com/lucide@latest"></script>
     <script type="module" crossorigin src="/mentix-botz/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/mentix-botz/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/mentix-botz/assets/styles-JOicH7Tv.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
+  <div class="container header__container">
+    <a href="/" class="logo">
+      Mentix<span class="logo__accent">-Botz</span>
+    </a>
+
     <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+      <ul class="nav__list">
+        <li><a href="#" class="nav__link active">Главная</a></li>
+        <li><a href="#about" class="nav__link">О платформе</a></li>
+        <li><a href="#benefits" class="nav__link">Преимущества</a></li>
+        <li><a href="#innovations" class="nav__link">Инновации</a></li>
+        <li><a href="#blog" class="nav__link">Блог</a></li>
       </ul>
     </nav>
+
+    <a href="#contact" class="btn btn--header">
+      <span>Связаться</span>
+      <i data-lucide="arrow-up-right"></i>
+    </a>
+
+    <button class="burger" aria-label="Menu">
+      <span></span>
+    </button>
   </div>
 </header>
-
+<div class="mobile-menu">
+  <nav class="mobile-nav">
+    <a href="#hero" class="mobile-nav__link">Главная</a>
+    <a href="#about" class="mobile-nav__link">О платформе</a>
+    <a href="#benefits" class="mobile-nav__link">Преимущества</a>
+    <a href="#innovations" class="mobile-nav__link">Инновации</a>
+    <a href="#blog" class="mobile-nav__link">Блог</a>
+    <a href="#contact" class="btn btn--mobile">Начать сейчас</a>
+  </nav>
+</div>
 
     <main>
       <!-- Loads the specified .html file -->
-      
+      <section class="hero" id="hero">
+    <div class="container">
+        <div class="hero__content">
+            <span class="hero__subtitle">Технология нового поколения</span>
+            <h1 class="hero__title" id="hero-title">Решения, которые меняют правила игры</h1>
+            <p class="hero__description">Передовая цифровая инфраструктура для консалтинга. Мы превращаем сложные данные
+                в понятные стратегии роста.</p>
+            <div class="hero__btns">
+                <a href="#contact" class="btn btn--primary">Бесплатная консультация</a>
+                <a href="#about" class="btn btn--outline">Узнать детали</a>
+            </div>
+        </div>
+    </div>
+    <div class="hero__bg-element"></div>
+</section>
+
+<section class="about" id="about">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Переосмыслите подход к развитию</h2>
+        </div>
+        <div class="about__grid">
+            <div class="about__text">
+                <p>Платформа уже доступна в Европе и предлагает AI-инструменты для реальных задач. Мы не просто даем
+                    советы — мы внедряем инновации, которые работают на вас.</p>
+                <ul class="about__list">
+                    <li><i data-lucide="check-circle"></i> Экспертная поддержка на всех этапах</li>
+                    <li><i data-lucide="check-circle"></i> Быстрый и лёгкий старт (2 минуты)</li>
+                    <li><i data-lucide="check-circle"></i> Методологии, доказавшие эффективность</li>
+                </ul>
+            </div>
+            <div class="about__image">
+                <img src="img/placeholder.png" alt="Platform Preview" class="glass-img">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="benefits" id="benefits">
+    <div class="container">
+        <h2 class="section-title center">Ваши возможности</h2>
+        <div class="benefits__grid">
+            <div class="benefit-card">
+                <div class="benefit-card__icon"><i data-lucide="zap"></i></div>
+                <h3>Мгновенная аналитика</h3>
+                <p>Оценить перспективы проекта за считанные секунды с помощью наших AI-моделей.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-card__icon"><i data-lucide="trending-up"></i></div>
+                <h3>Стратегия роста</h3>
+                <p>Постройте карьеру или бизнес, который работает на вас, используя наши практики.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-card__icon"><i data-lucide="shield-check"></i></div>
+                <h3>Проверенный партнер</h3>
+                <p>Надежная защита данных и полная прозрачность всех процессов консалтинга.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="innovations" id="innovations">
+    <div class="container">
+        <div class="innovations__banner">
+            <div class="innovations__content">
+                <h2>Инновационная технология для пассивного дохода</h2>
+                <p>Откройте новые возможности в странах ЕС. Доступ к платформе открыт для ограниченного круга лиц.</p>
+                <a href="#contact" class="btn btn--accent">Запросить доступ</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="blog" id="blog">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Образовательная часть</h2>
+            <a href="#" class="btn-text">Все статьи <i data-lucide="move-right"></i></a>
+        </div>
+        <div class="blog__grid">
+            <article class="blog-card">
+                <div class="blog-card__img"><img src="img/placeholder.png" alt="Blog"></div>
+                <div class="blog-card__body">
+                    <span class="blog-card__tag">AI & Tech</span>
+                    <h4>Как внедрить AI в бизнес за неделю</h4>
+                    <p>Пошаговый путь, понятный каждому без технического опыта.</p>
+                </div>
+            </article>
+            <article class="blog-card">
+                <div class="blog-card__img"><img src="img/placeholder.png" alt="Blog"></div>
+                <div class="blog-card__body">
+                    <span class="blog-card__tag">Strategy</span>
+                    <h4>Будущее консалтинга во Франции</h4>
+                    <p>Почему традиционные модели больше не работают.</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
     </main>
 
     <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
+  <div class="container footer__grid">
+    <div class="footer__col">
+      <a href="/" class="logo logo--footer">
+        Mentix<span class="logo__accent">-Botz</span>
       </a>
-    </p>
+      <p class="footer__text">
+        Переосмыслите подход к развитию с помощью AI-технологий и экспертного консалтинга.
+      </p>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Меню</h4>
+      <ul class="footer__links">
+        <li><a href="#about">О платформе</a></li>
+        <li><a href="#benefits">Преимущества</a></li>
+        <li><a href="#innovations">Инновации</a></li>
+        <li><a href="#blog">Блог</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Документы</h4>
+      <ul class="footer__links">
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="cookies.html">Cookie Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+        <li><a href="return.html">Return Policy</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+        <li><a href="personal-data-policy.html">Data Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Контакты</h4>
+      <ul class="footer__contacts">
+        <li>
+          <i data-lucide="phone"></i>
+          <a href="tel:+493012345678">+49 30 1234 5678</a>
+        </li>
+        <li>
+          <i data-lucide="mail"></i>
+          <a href="mailto:hello@mentix-botz.blog">hello@mentix-botz.blog</a>
+        </li>
+        <li>
+          <i data-lucide="map-pin"></i>
+          <span>Friedrichstraße 15, 10117 Berlin, Germany</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <p>&copy; 2025 Mentix-Botz. Все права защищены.</p>
   </div>
 </footer>
-
+<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
   </body>
 </html>
